@@ -31,11 +31,13 @@ Finally this high level abstract object can be used for driving playback or doin
 
 
 ### TODOS:
-[] Helpers around parsing Attribute Lists
-[] Handle all Media Style tags
-[] Make this library just about parsing HLS and providing the streaming modification and split out the WASM wrapper
-[] Make m3u8-rs a dep only for bench target (if possible?)
-[] More Benchmarks and tests.
+- [ ] Helpers around parsing Attribute Lists
+- [ ] Handle all Media Playlist tags
+- [ ] Fix Error types to a ParseError that coalesces sub errors.
+- [ ] Remove `unwrap()` from `parse_tag`
+- [ ] Make this library just about parsing HLS and providing the streaming modification and split out the WASM wrapper
+- [ ] Make m3u8-rs a dep only for bench target (if possible?)
+- [ ] More Benchmarks and tests.
 
 ### HLS Spec
 This implementation is targetting [Draft 11 of the HLS2 spec](https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis) that is attempting to replace [RPC 2816](https://datatracker.ietf.org/doc/html/rfc8216).
